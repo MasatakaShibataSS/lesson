@@ -9,5 +9,6 @@ int main(void)
    if(i < 5) goto a;
    printf("END\n");
 //comment
+//comment2
    return 0;
 }
