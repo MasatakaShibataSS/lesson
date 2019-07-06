@@ -8,6 +8,6 @@ int main(void)
    i++;
    if(i < 5) goto a;
    printf("END\n");
-
+//comment
    return 0;
 }
