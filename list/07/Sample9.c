@@ -4,7 +4,7 @@ int main(void)
 {
  char str[] = "Hello";
  int i;
-//コメント
+
  printf("Hello\n");
 /*
  for(i=0; str[i]!='\0'; i++){
@@ -12,7 +12,8 @@ int main(void)
  }*/
  i=0;
  while(str[i]){
-   printf("%c*", str[i]);
+   printf("%c*", str[i]&0xdf);
+   //&0xdfでASCIIコードを使って大文字に変換
    i++;
  }
  printf("\n");

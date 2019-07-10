@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  /*
+
  char str[6];
 
  str[0]='H';
@@ -11,8 +11,9 @@ int main(void)
  str[3]='l';
  str[4]='o';
  str[5]='\0';
-*/
-char str[10] = "Hellooooi";
+
+//char str[10] = "Hellooooi";
+//har str[] = "Hellooooi";添字は省略可
  printf("%sは文字列です。\n", str);
 
   return 0;
