@@ -6,7 +6,7 @@ int main(void)
 int test[NUM];
 int con;
 int i, j;
-//コメント
+
 con = 0;
 
 printf("五人点数を入力してください。m(_ _)m\n");
