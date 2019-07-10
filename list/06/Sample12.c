@@ -7,7 +7,7 @@ int main(void)
 
   printf("何番目の処理を飛ばしますか？（１〜１０）\n");
   scanf("%d", &res);
-
+//comment
   for (i=1; i<=10; i++) {
     if(i == res)
       continue;
