@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define NUM 5
+#define NUM 6
 
 int main(void)
 {
