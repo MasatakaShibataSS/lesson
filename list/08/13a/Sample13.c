@@ -14,6 +14,7 @@ int main(void)
   ans = max(num1, num2);
 
   printf("最大値は%d\n", ans);
+  printf("a=%d\n", a);
 
 
 

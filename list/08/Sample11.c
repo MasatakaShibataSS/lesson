@@ -1,8 +1,9 @@
 #include <stdio.h>
 
+
 int a = 100;
 
-void func(void)
+int func(void)
 {
   int b;
   static int c = 10;
@@ -12,6 +13,7 @@ void func(void)
   a++;
   b++;
   c++;
+  return c;
 }
 void func2(void)
 {
@@ -25,6 +27,8 @@ int main(void)
   for(i=0; i<5; i++){
   func();
   func2();
+  printf("c=%d\n", func());
 }
+
   return 0;
 }
