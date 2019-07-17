@@ -23,7 +23,9 @@ int power(int x, int y)
 {
   int i;
   int p = 1;
-  for (i = 0; i < y; i++) {
+  // for (i = 0; i < y; i++) {
+    for (i = 1; i <= y; i++) {
+
     p = p*x;
   }
   return p;

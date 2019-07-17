@@ -1,5 +1,6 @@
 CC := gcc
 CFLAGS := -Wall -Wextra -fpic
+LIBS := -lm
 PROGRAMS := 8_1 \
 	8_2 \
 	8_3 \
@@ -8,8 +9,7 @@ PROGRAMS := 8_1 \
 
 all: $(PROGRAMS)
 
-8_5: 8_5.o myfunc.o
+8_5: 8_5.o $(LIBS)
 
 clean:
 	$(RM) $(PROGRAMS) *.o
-

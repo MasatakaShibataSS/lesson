@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(void)
 {
   int a;
@@ -11,7 +12,5 @@ int main(void)
   printf("変数aの値は%dです。\n", a);
   printf("変数aのアドレスは%pです。\n", &a);
   printf("ポインタpaの値は%pです。\n", pA);
-
-
    return 0;
 }
