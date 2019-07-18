@@ -8,7 +8,8 @@ int main(void)
   printf("test[0]のアドレスは%pです\n", &test[0]);
   printf("testの値は%pです\n", test);
   printf("つまり*testの値は%dです\n", *test);
-  printf("つまり*testの値は%dです\n", *(&test[1]));
+
+  printf("つまり*test1の値は%dです\n", *(&test[1]));
 
    return 0;
 }

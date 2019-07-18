@@ -7,6 +7,7 @@ PROGRAMS := Sample1 \
 	Sample5 \
 	Sample6 \
 	Sample7 \
+	Sample61 \
 
 all: $(PROGRAMS)
 

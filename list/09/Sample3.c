@@ -3,10 +3,11 @@
 int main(void)
 {
   int a;
+  long b=100;
   int *pA;
 
   a = 5;
-  pA = &a;
+  pA = (int *)&b;
 
   printf("変数aの値は%dです。\n", a);
   printf("変数aのアドレスは%pです。\n", &a);

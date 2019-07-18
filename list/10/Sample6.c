@@ -35,6 +35,11 @@ double avg(int *pT)
 
   for(i=0; i<5; i++){
     sum += *(pT+i);
+    // sum += pT[i];
   }
+
+  for(i=0; i<5; i++){
+      pT[i] = 0;
+    }
   return sum/5;
 }

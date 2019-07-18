@@ -14,9 +14,9 @@ int main(void)
   printf("ポインタpaの値は%pです。\n", pA);
   printf("*pAの値は%dです。\n", *pA);
 
-  // pA = &b;
+  pA = &b;
   // pA++;
-  pA += 1;
+  // pA += 1;
 
   printf("変数bの値は%dです。\n", b);
   printf("ポインタpaの値は%pに変更されました。\n", pA);

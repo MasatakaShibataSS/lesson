@@ -16,6 +16,8 @@ int main(void)
   }
 
   ans = avg(test);
+  // ans = avg(&test[0]);
+
   printf("5人の平均点は%lf点です。\n", ans);
 
   for(i=0; i<5; i++){
@@ -36,5 +38,9 @@ double avg(int t[])
   for(i=0; i<5; i++){
     sum += t[i];
   }
+  for(i=0; i<5; i++){
+      t[i] = 0;
+    }
+
   return sum/5;
 }
