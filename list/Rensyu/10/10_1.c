@@ -19,6 +19,7 @@ int main(void)
 }
 
 /* length関数の定義 */
+/*
 int length(char str[])
 {
   int i, c;
@@ -26,6 +27,15 @@ int length(char str[])
   for (i = 0; str[i]!='\0'; i++) {
     c++;
   }
+
+  return c;
+}*/
+
+int length(char str[])
+{
+  int c = 0;
+  for(; *str; str++)
+  c++;
 
   return c;
 }

@@ -18,7 +18,7 @@ int main(void)
 }
 
 /* search関数の定義 */
-
+/*
 int search(char *str)
 {
   int  c = 0;
@@ -31,4 +31,17 @@ int search(char *str)
   }
   return c;
 
+}
+*/
+
+int search(char *str)
+{
+  int c =0;
+  for(; *str; str++){
+  if (*str == '@')
+      c++;
+  }
+  str++;
+
+  return c;
 }

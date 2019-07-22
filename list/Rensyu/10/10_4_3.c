@@ -29,6 +29,7 @@ int main(void)
 }
 
 /* compare関数の定義 */
+/*
 int compare(char *str1, char *str2)
 {
   while (*str1 == *str2) {
@@ -40,6 +41,7 @@ int compare(char *str1, char *str2)
   }
 
 return -1;
+*/
 /*
   for(i=0; str1[i] == str2[i]; i++){
     if(str1[i] == '\0'){
@@ -47,5 +49,17 @@ return -1;
     }
   }
   return -1;
-  */
+
+}  */
+
+
+int compare(char *str1, char *str2)
+{
+    for (; *str1 == *str2; str1++, str2++){
+      /* if (*str1 =='\0')*/
+      if(!*str1)
+      return 1;
+    }
+    return -1;
+
 }
