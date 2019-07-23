@@ -4,11 +4,11 @@
 struct Car{
   int num;
   double gas;
-};
+}car1, car2;
 
 int main(void)
 {
-  struct Car car1, car2;
+  // struct Car car1, car2;
 
   car1.num = 1234;
   car1.gas = 25.5;
