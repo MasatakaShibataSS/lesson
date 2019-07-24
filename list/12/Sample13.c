@@ -15,7 +15,7 @@ int main(void)
   }
 
   for(i=0; i<NUM; i++){
-    fwrite(&test[i], sizeof(int), 1,fp);
+    fwrite(&test[i], 4, 1,fp);
   }
   printf("ファイルに書き込みました。\n");
 
