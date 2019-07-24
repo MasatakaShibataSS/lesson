@@ -14,6 +14,6 @@ int main(void)
     printf("ファイルをオープンしました。\n");
   }
   fclose(fp);
-  printf("ファイルをクローズしました。");
+  printf("ファイルをクローズしました。\n");
    return 0;
 }
