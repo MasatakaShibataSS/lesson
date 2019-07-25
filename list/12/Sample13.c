@@ -4,7 +4,7 @@
 int main(void)
 {
   FILE *fp;
-  int test[NUM] = {80,60,22,50,75};
+  int test[NUM] = {65536,60,22,50,75};
   int i;
 
   fp = fopen("test1.bin", "wb");
@@ -15,7 +15,7 @@ int main(void)
   }
 
   for(i=0; i<NUM; i++){
-    fwrite(&test[i], 4, 1,fp);
+    fwrite(&test[i], sizeof(int), 1,fp);
   }
   printf("ファイルに書き込みました。\n");
 

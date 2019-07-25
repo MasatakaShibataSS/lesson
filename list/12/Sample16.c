@@ -12,6 +12,8 @@ int main(int argc, char *argv[])
 
   for(int i=0; i<argc; i++)
   printf("argv[%d]:%s\n",i,argv[i] );
+
+
   fp = fopen(argv[1], "r");
 
   if(fp == NULL){
