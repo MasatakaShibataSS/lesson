@@ -17,6 +17,7 @@ void Person::setname(string s)
     name = s;
 }
 
+
 void Person::setage(int n)
 {
     if (n < 0) age = 0; else age = n;
@@ -37,4 +38,3 @@ int main()
 
     return 0;
 }
- 
