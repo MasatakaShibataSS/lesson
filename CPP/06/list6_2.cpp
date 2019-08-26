@@ -17,7 +17,10 @@ void Person::setname(string s)
     name = s;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea5a29cf095308bb6f3f8f4938f421db82c13a38
 void Person::setage(int n)
 {
     if (n < 0) age = 0; else age = n;
@@ -38,3 +41,7 @@ int main()
 
     return 0;
 }
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> ea5a29cf095308bb6f3f8f4938f421db82c13a38

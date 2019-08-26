@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+<<<<<<< HEAD
 // ---------基底クラス---------
 class Foo {
 private:
@@ -64,3 +65,11 @@ int main()
 
     return 0;
 }
+=======
+int main()
+{
+
+	return 0;
+}
+
+>>>>>>> ea5a29cf095308bb6f3f8f4938f421db82c13a38

@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map For ACM1602
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+lcd_write	KEYWORD2
+clear	KEYWORD2
+set_display	KEYWORD2
+set_cursol	KEYWORD2
+set_blink	KEYWORD2
+move	KEYWORD2
+backlight	KEYWORD2
+charwrite	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+ACM1602	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
