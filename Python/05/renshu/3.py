@@ -1,5 +1,5 @@
-data = [74,85,69,77,81]
-print("テストの点は", data, "です。")
-ndata = [n for n in data if n >= 80]
-print("80点以上は", ndata, "です。")
-print("80点以上の人数は", len(ndata), "です。")
+test = [74,85,69,77,81]
+hight = [n for n in test if n >= 80]
+print("テストの点は", test, "です。")
+print("80点以上は", hight, "です。")
+print("80点以上の人数は", len(hight), "です。")

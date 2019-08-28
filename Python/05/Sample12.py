@@ -6,10 +6,12 @@ print("売上データは", sale, "です。")
 
 print("データを組み合わせます。")
 
-for d in zip(city, sale):
-    print(d)
+for d in enumerate(zip(city, sale)):
+#     print(d)
+#     print("支店:", d[0], "売上:", d[1])
+    print(d[0],d[1][0],d[1][1])
 
 print("データとインデックスを組み合わせます。")
 
-for d in enumerate(city):
+for d in enumerate(sale):
     print(d)
