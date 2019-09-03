@@ -14,7 +14,7 @@ def funcB():
 def funcC():
 
     c = 2
-    a = 13
+    
 
     print("funcCの中では変数aと変数cが使えます。")
     print("変数aの値は", a, "です。")
