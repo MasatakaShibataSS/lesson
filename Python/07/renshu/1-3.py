@@ -9,7 +9,7 @@ answer = ["京都", "北海道", "沖縄", "博多", "北海道", "大阪",
 results = { }
 
 # 辞書resultsに国と得票数を格納する
-
+#
 def val(n):
 
     return n[1]
@@ -26,7 +26,15 @@ for region in answer:
 
 # 結果を表示する
 print(results)
+lst = [rst for rst in results.items() if rst[1] >5]
+print(lst)
+lst.sort(key=lambda c:c[1], reverse=True)
+print(lst)
+
+for r, n in lst:
+    print(r, ":", n)
+
 
 for region, num in sorted (results.items(), key=val, reverse=True):
 
-    print(region,":", num)
+    print(region,"::", num)
