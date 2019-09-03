@@ -1,3 +1,4 @@
+# データの順序を逆転させる。
 data = [1,2,3,4,5]
 print("現在のデータは", data, "です。")
 
@@ -16,3 +17,7 @@ print("現在のデータは", data, "です。")
 print("data.reverse()を処理します。")
 data.reverse()
 print("現在のデータは", data, "です。")
+# 元をそのままに反転させる
+ysale = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+l = list(reversed(ysale))
+print(l)

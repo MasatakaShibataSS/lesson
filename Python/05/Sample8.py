@@ -1,3 +1,4 @@
+# Sample7と違ってコピーなのでリンクしない。
 data1 = [1,2,3,4,5]
 data2 = list(data1)
 # data2 = data1.copy()
