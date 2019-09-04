@@ -1,20 +1,23 @@
 class Person:
 
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        self.__name = name
+        self.__age = age
 
     def getName(self):
-        return self.name
+        return self.__name
 
     def getAge(self):
-        return self.age
+        return self.__age
 
     def setName(self,name):
-        self.name = name
+        self.__name = name
+        return self.__name
 
     def setAge(self,age):
-        self.age = age
+        if age >= 0:
+            self.__age = age
+        return self.__age
 
 pr = Person("鈴木", 23)
 
@@ -23,10 +26,7 @@ a = pr.getAge()
 
 print(n,"さんは", a, "歳です。")
 
-pr.setName("佐藤")
-pr.setAge(29)
-
-n = pr.getName()
-a = pr.getAge()
+n = pr.setName("佐藤")
+a = pr.setAge(29)
 
 print(n,"さんは", a, "歳です。")
