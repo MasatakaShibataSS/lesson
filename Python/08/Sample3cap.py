@@ -19,6 +19,9 @@ class Person:
             self.__age = age
         return self.__age
 
+
+    age = property(getAge)
+
 pr = Person("鈴木", 23)
 
 n = pr.getName()
@@ -26,7 +29,8 @@ a = pr.getAge()
 
 print(n,"さんは", a, "歳です。")
 
-n = pr.setName("佐藤")
-a = pr.setAge(29)
+pr.setName("佐藤")
+pr.setAge(29)
 
 print(n,"さんは", a, "歳です。")
+print(pr.age)
