@@ -1,6 +1,6 @@
 import myclass1
 
-pr = myclass1.Customer("鈴木", 23, "mmm@nnn.nn.jp", "xxx-xxx-xxxx")
+pr = myclass1.Customer("柴田", 40, "mmm@nnn.nn.jp", "xxx-xxx-xxxx")
 
 nm = pr.getName()
 ag = pr.getAge()

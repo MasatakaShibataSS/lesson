@@ -26,3 +26,17 @@ class Customer(Person):
 
     def getTel(self):
         return self.tel
+
+
+
+if __name__ == "__main__":
+
+    pr = Customer("鈴木", 23, "mmm@nnn.nn.jp", "xxx-xxx-xxxx")
+
+    nm = pr.getName()
+    ag = pr.getAge()
+    ad = pr.getAdr()
+    tl = pr.getTel()
+
+    print(nm, "さんは", ag, "歳です。")
+    print("アドレスは", ad, "電話番号は", tl, "です。")
