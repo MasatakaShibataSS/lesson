@@ -29,12 +29,17 @@ class Student(Person):
 #名前、年齢、身長(cm)でインスタンスを作成
 pr1 = Student("田中", 23, 180)
 pr2 = Student("渡辺", 25, 160)
+pr3 = Student("柴田", 40, 177)
+
 
 #名前、年齢、標準体重を表示
 pr1.disp()
 pr2.disp()
+pr3.disp()
+
 #BMIを変更
 Student.setBmi(21)
 #名前、年齢、標準体重を表示
 pr1.disp()
 pr2.disp()
+pr3.disp()
