@@ -1,6 +1,6 @@
 import csv
 
-fp = open("answer.csv", "r", encoding="utf_8")
+fp = open("./answer.csv", "r", encoding="utf_8")
 reader = csv.reader(fp)
 
 
