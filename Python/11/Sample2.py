@@ -1,10 +1,11 @@
-f = open("Sample.txt","r")
+import sqlite3
+conn = sqlite3.connect("pdb.db")
 
-lines = f.readlines()
+c = conn.cursor()
 
-for line in lines:
-    # print(line, end="")
-    print(line)
+itr = c.execute("SELECT * FROM product WHERE peice>=200")
 
+for row in itr:
+    print(row)
 
-f.close()
+conn.close()

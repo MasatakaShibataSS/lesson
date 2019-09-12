@@ -1,14 +1,26 @@
-import os
-import os.path
+import urllib.request
+from html.parser import HTMLParser
 
-curdir = os.listdir(".")
+class SampleHTMLParser(HTMLParser):
+    def __init__(self):
+        HTMLParser.__init__(self):
+        self.title = False
 
-for name in curdir:
-    print(os.path.abspath(name), end=",")
+    def handle_starttag(self, tag, attrs):
+        if tag == "title":
+            self.title = True
 
-    if(os.path.isfile(name)):
-        print("ファイルです。")
+    def handle_data(self, data):
+        if self title is True:
+            print("タイトル:", data)
+            self.title = False
 
-    else:
-        print("ディレクトリです。")
-print()
+page = urllib.request.urlopen("https://www.yahoo.co.jp")
+
+html = page.read()
+str = html.decode()
+
+p = SampleHTMLParser()
+p.feed(str)
+
+p.close

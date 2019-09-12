@@ -1,6 +1,8 @@
-import os
+import urllib.request
 
-curdir = os.listdir(".")
+page = urllib.request.urlopen("https://www.yahoo.co.jp")
 
-for name in curdir:
-    print(name)
+html = page.read()
+str = html.decode()
+
+print(str)

@@ -1,11 +1,11 @@
-import csv
+import sqlite3
+conn = sqlite3.connect("pdb.db")
 
-f = open("Sample.csv","r")
+c = conn.cursor()
 
-rd = csv.reader(f)
+itr = c.execute("SELECT * FROM product WHERE name='鉛筆'")
 
-for row in rd:
-    for col in row:
-        print(col, end=",")
-    print()
-f.close()
+for row in itr:
+    print(row)
+
+conn.close()

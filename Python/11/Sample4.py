@@ -1,9 +1,11 @@
-import csv
+import sqlite3
+conn = sqlite3.connect("pdb.db")
 
-f = open("Sample2.csv","w")
+c = conn.cursor()
 
-w = csv.writer(f)
-# w.writerow(["東京","消しゴム"])
-w.writerows([["東京","定規"],["名古屋","ノート"]])
+itr = c.execute("SELECT * FROM product WHERE name LIKE '%ン%'")
 
-f.close()
+for row in itr:
+    print(row)
+
+conn.close()

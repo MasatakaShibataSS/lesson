@@ -1,14 +1,11 @@
-try:
-    f = open("Sample.txt", "r")
+import sqlite3
+conn = sqlite3.connect("pdb.db")
 
-except FileNotFoundError:
-    print("ファイルをオープンできませんでした。")
+c = conn.cursor()
 
-else:
-    lines = f.readlines()
-    for line in lines:
-        print(line, end="")
-    f.close()
+itr = c.execute("SELECT * FROM product ORDER BY price DESC")
 
-finally:
-    print("処理を終了します。")
+for row in itr:
+    print(row)
+
+conn.close()
