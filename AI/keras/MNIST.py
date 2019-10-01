@@ -6,7 +6,7 @@ from keras.optimizers import RMSprop
 
 batch_size = 128  # 訓練データを128ずつのデータに分けて学習させる
 num_classes = 10 # 分類させる数。数字なので10種類
-epochs = 6 # 訓練データを繰り返し学習させる数
+epochs = 3 # 訓練データを繰り返し学習させる数
 
 # 訓練データ(train)とテストデータ（test)を取得する
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
