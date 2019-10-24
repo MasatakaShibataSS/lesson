@@ -7,10 +7,10 @@ from acm1602 import acm1602
 
 SERVER_NAME = "imap.gmail.com"
 USERNAME = "masataka.shibata.sss@gmail.com"
-PASSWORD = "Sativa5466@@@"
+PASSWORD = "Sativa5466"
 
 mail = imaplib.IMAP4_SSL( SERVER_NAME )
-mail.login( masataka.shibata.sss, Sativa5466@@@ )
+mail.login( USERNAME, PASSWORD )
 mail.list()
 mail.select( "Inbox" )
 ( st, mlist ) = mail.status( 'Inbox', "(UNSEEN)" )
