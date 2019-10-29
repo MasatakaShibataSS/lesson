@@ -6,7 +6,7 @@ host = 'localhost'
 
 GPIO.setmode(GPIO.BCM)
 led_pins = [18, 23, 24]
-led_states = [0,0,0]
+led_states = [0, 0, 0]
 switch_pin = 25
 
 GPIO.setup(led_pins[0], GPIO.OUT)
@@ -23,20 +23,20 @@ def switch_status():
 
 def html_for_led(led):
     l = str(led)
-    result = "<input type='button' onClick='changed(" + l + ")' value='LED " + l + "'/>"
+    result = " <input type='button' onClick='changed(" + l + ")' value='LED " + l + "'/>"
     return result
 
-    def update_leds():
-        for i, value in enumerate(led_states):
-            GPIO.output(led_pins[i], value)
+def update_leds():
+    for i, value in enumerate(led_states):
+        GPIO.output(led_pins[i], value)
 
 @route('/')
 @route('/<led>')
-def index(led='n'):
+def index(led="n"):
     print(led)
     if led != "n":
         try:
-            led_num =int(led)
+            led_num = int(led)
             led_states[led_num] = not led_states[led_num]
             update_leds()
         except ValueError:
@@ -44,7 +44,7 @@ def index(led='n'):
     response = "<script>"
     response += "function changed(led)"
     response += "{"
-    response += " window.location.href='/' +led"
+    response += "  window.location.href='/' + led"
     response += "}"
     response += "</script>"
 

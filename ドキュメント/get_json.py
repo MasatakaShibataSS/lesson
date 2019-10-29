@@ -1,8 +1,8 @@
 import imaplib, email.parser, email.header, os, os.path
 
 SERVER_NAME='imap.gmail.com'
-USERNAME='pingpongpang@gmail.com'
-PASSWORD='foobarboo'
+USERNAME='masataka.shibata.sss@gmail.com'
+PASSWORD='Sativa5466'
 
 MBOX='INBOX'
 
