@@ -2,7 +2,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-
+from sklearn import linear_model
 
 ### バラつきのある y = 4x^3 - 3x^2 + 2x - 1 のデータを作成
 
@@ -23,8 +23,6 @@ y_test = y[30:]
 
 
 ### 最小二乗法で 9 次式として回帰をとってみる
-
-from sklearn import linear_model
 
 # 学習用の入力データ
 X_TRAIN = np.c_[x_train**9, x_train**8, x_train**7, x_train**6, x_train**5,
@@ -48,6 +46,7 @@ X_TEST = np.c_[x_test**9, x_test**8, x_test**7, x_test**6, x_test**5,
                x_test**4, x_test**3, x_test**2, x_test]
 
 print('決定係数（テストデータ）', model.score(X_TEST, y_test))
+
 
 
 ### グラフ表示
