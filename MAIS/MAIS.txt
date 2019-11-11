@@ -1,4 +1,5 @@
 Medical Artificial Intelligenc Service
+Artificial Intelligence Food Recommend Service
 
 持病に対して食事などのアドバイス
 　外出時のコンビニやファミレスでのメニューレコメンド
@@ -34,3 +35,5 @@ Medical Artificial Intelligenc Service
 　　　（クックパッド、ぐるなび、保険会社、医療機関、食品メーカー）
 ・企画書作成
 ・スタートアップメンバの勧誘
+　　BEDORE（清水さん、嶋田さん）
+　　スクール（斎藤さん、森川先生、村田さん、色部さん）
